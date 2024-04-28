@@ -1,0 +1,6 @@
+header {
+  @include flex(flex, row, space-between, center);
+  height: 5vh;
+  outline: 1px solid green;
+  font-family: "font1";
+}

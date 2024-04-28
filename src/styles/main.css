@@ -1,0 +1,87 @@
+/* -------------------------------------------- */
+/*
+ @include flex(flex, column, center, flex-start)
+*/
+/* -------------------------------------------- */
+/*
+ @include spacing("margin", 1rem, "xy");
+ @include spacing("padding", 0.5rem, "y");
+*/
+/* -------------------------------------------- */
+/*
+  .container-with-floated-children {
+  @extend %clearfix;
+  }
+*/
+/* -------------------------------------------- */
+/*
+  .image {
+    @include image-2x('path/to/image.png', 100px, 50px);
+  }
+*/
+/*
+@include screen(laptop) {
+  width: 80vw;
+}
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  background: rgb(0, 23, 57);
+  background: radial-gradient(circle, rgb(0, 23, 57) 0%, rgb(2, 0, 36) 100%);
+  color: #e5c56e;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+@font-face {
+  src: url(../assets/fonts/rumblebrave.otf);
+  font-family: "font1";
+}
+@font-face {
+  src: url(../assets/fonts/Montserrat.ttf);
+  font-family: "font2";
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  outline: 1px solid green;
+  font-family: "font1";
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}/*# sourceMappingURL=main.css.map */

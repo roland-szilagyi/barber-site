@@ -1,0 +1,8 @@
+main {
+  @include flex(flex, column, center, center);
+  height: 95vh;
+
+  // background-image: url('../assets/imgs/mainbackground.png');
+  // background-size: cover;
+  // background-position: center;
+}

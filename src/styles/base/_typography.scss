@@ -1,0 +1,11 @@
+$brave: "../assets/fonts";
+@font-face {
+  src: url(#{$brave}/rumblebrave.otf);
+  font-family: 'font1';
+}
+
+$montserrat: "../assets/fonts";
+@font-face {
+  src: url(#{$montserrat}/Montserrat.ttf);
+  font-family: 'font2';
+}
