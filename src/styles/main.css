@@ -73,15 +73,64 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 5vh;
-  outline: 1px solid green;
+  height: 8vh;
   font-family: "font1";
 }
 
+.title__cont {
+  margin: 0 1rem;
+}
+@media screen and (min-width: 769px) {
+  .title__cont {
+    font-size: 1.4rem;
+  }
+}
+
+.menu__cont {
+  display: none;
+}
+@media screen and (min-width: 769px) {
+  .menu__cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu__cont a {
+    text-shadow: 1px 1px 1px #987412;
+    color: #e5c56e;
+    font-size: 1.8rem;
+    margin: 0 1.5rem;
+  }
+  .menu__cont a:hover {
+    scale: 1.1;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .ham__cont {
+    visibility: hidden;
+  }
+}
+.ham__cont img {
+  height: 4vh;
+  width: auto;
+  margin: 0 1rem;
+}
+
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 95vh;
+  height: 92vh;
+}
+@media screen and (min-width: 769px) {
+  main .phone--background {
+    display: none;
+  }
+}
+main .desktop--background {
+  display: none;
+}
+@media screen and (min-width: 769px) {
+  main .desktop--background {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */

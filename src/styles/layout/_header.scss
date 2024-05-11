@@ -1,6 +1,44 @@
 header {
   @include flex(flex, row, space-between, center);
-  height: 5vh;
-  outline: 1px solid green;
+  height: 8vh;
   font-family: "font1";
+}
+
+.title__cont {
+  margin: 0 1rem;
+
+  @include screen(laptop) {
+    font-size: $font-size-sm;
+  }
+}
+
+.menu__cont {
+  display: none;
+
+  @include screen(laptop) {
+    @include flex(flex, row, space-between, center);
+  
+    a {
+      text-shadow: 1px 1px 1px $color-quinary;
+      color: $color-tertiary;
+      font-size: $font-size-md;
+      margin: 0 1.5rem;
+    }
+
+    a:hover {
+      scale: 1.1;
+    }
+  }
+}
+
+.ham__cont {
+
+  @include screen(laptop) {
+    visibility: hidden;
+  }
+  img {
+    height: 4vh;
+    width: auto;
+    margin: 0 1rem;
+  }
 }

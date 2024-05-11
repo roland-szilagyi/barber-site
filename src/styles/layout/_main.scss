@@ -1,8 +1,20 @@
 main {
-  @include flex(flex, column, center, center);
-  height: 95vh;
+  height: 92vh;
 
-  // background-image: url('../assets/imgs/mainbackground.png');
-  // background-size: cover;
-  // background-position: center;
+  
+
+  .phone--background {
+
+    @include screen(laptop) {
+      display: none;
+    }
+  }
+
+  .desktop--background {
+    display: none;
+    
+    @include screen(laptop) {
+      display: block;
+    }
+  }
 }
