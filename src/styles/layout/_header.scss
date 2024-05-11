@@ -7,6 +7,10 @@ header {
 .title__cont {
   margin: 0 1rem;
 
+  h2 {
+    @include title(2rem, 0.05rem);
+  }
+
   @include screen(laptop) {
     font-size: $font-size-sm;
   }
@@ -19,9 +23,7 @@ header {
     @include flex(flex, row, space-between, center);
   
     a {
-      text-shadow: 1px 1px 1px $color-quinary;
-      color: $color-tertiary;
-      font-size: $font-size-md;
+      @include title(1.8rem, 0.04rem);
       margin: 0 1.5rem;
     }
 

@@ -31,6 +31,21 @@
 
 /* -------------------------------------------- */
 
+// TITLE STYLE
+@mixin title($font-size, $stroke) {
+  font-family: 'font1';
+  font-size: $font-size; // 5rem optimal
+  color: $color-quinary;
+  -webkit-text-stroke: $stroke $color-tertiary; // 0.15rem optimal
+}
+
+// PARAGRAPH STYLE
+@mixin paragraph($font-size, $color) {
+  font-family: 'font2';
+  font-size: $font-size;
+  color: $color;
+}
+
 // MARGIN & PADDING
 @mixin spacing($type, $size, $directions: "xy") {
   @if $type == "margin" {

@@ -1,0 +1,44 @@
+.thestory {
+  @include flex(flex, column, center, center);
+  margin: 3rem 0;
+
+  h2 {
+    @include title(2.8rem, 0.05rem);
+    margin-top: 3rem;
+  }
+
+  p {
+    @include paragraph(1.4rem, $color-primary);
+    background-color: $color-tertiary;
+    padding: 2rem;
+  }
+}
+
+// SHAPE
+
+.custom-shape-divider-bottom-1715441345 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1715441345 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 117px;
+}
+
+.custom-shape-divider-bottom-1715441345 .shape-fill {
+  fill: $color-tertiary;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1715441345 svg {
+      width: calc(100% + 1.3px);
+      height: 56px;
+  }
+}

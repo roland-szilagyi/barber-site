@@ -58,6 +58,7 @@ input, button, textarea, select {
 
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+  font-weight: 100;
 }
 
 @font-face {
@@ -65,7 +66,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "font1";
 }
 @font-face {
-  src: url(../assets/fonts/Montserrat.ttf);
+  src: url(../assets/fonts/gfs-didot.ttf);
   font-family: "font2";
 }
 header {
@@ -79,6 +80,12 @@ header {
 
 .title__cont {
   margin: 0 1rem;
+}
+.title__cont h2 {
+  font-family: "font1";
+  font-size: 2rem;
+  color: #987412;
+  -webkit-text-stroke: 0.05rem #e5c56e;
 }
 @media screen and (min-width: 769px) {
   .title__cont {
@@ -97,9 +104,10 @@ header {
     align-items: center;
   }
   .menu__cont a {
-    text-shadow: 1px 1px 1px #987412;
-    color: #e5c56e;
+    font-family: "font1";
     font-size: 1.8rem;
+    color: #987412;
+    -webkit-text-stroke: 0.04rem #e5c56e;
     margin: 0 1.5rem;
   }
   .menu__cont a:hover {
@@ -118,10 +126,7 @@ header {
   margin: 0 1rem;
 }
 
-main {
-  height: 92vh;
-}
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 576px) {
   main .phone--background {
     display: none;
   }
@@ -129,8 +134,57 @@ main {
 main .desktop--background {
   display: none;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 576px) {
   main .desktop--background {
     display: block;
+  }
+}
+
+.thestory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+.thestory h2 {
+  font-family: "font1";
+  font-size: 2.8rem;
+  color: #987412;
+  -webkit-text-stroke: 0.05rem #e5c56e;
+  margin-top: 3rem;
+}
+.thestory p {
+  font-family: "font2";
+  font-size: 1.4rem;
+  color: #001739;
+  background-color: #e5c56e;
+  padding: 2rem;
+}
+
+.custom-shape-divider-bottom-1715441345 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1715441345 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 117px;
+}
+
+.custom-shape-divider-bottom-1715441345 .shape-fill {
+  fill: #e5c56e;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1715441345 svg {
+    width: calc(100% + 1.3px);
+    height: 56px;
   }
 }/*# sourceMappingURL=main.css.map */

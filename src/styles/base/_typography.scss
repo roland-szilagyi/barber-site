@@ -4,8 +4,8 @@ $brave: "../assets/fonts";
   font-family: 'font1';
 }
 
-$montserrat: "../assets/fonts";
+$gfs-didot: "../assets/fonts";
 @font-face {
-  src: url(#{$montserrat}/Montserrat.ttf);
+  src: url(#{$gfs-didot}/gfs-didot.ttf);
   font-family: 'font2';
 }

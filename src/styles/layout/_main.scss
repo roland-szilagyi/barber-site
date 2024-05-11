@@ -1,19 +1,14 @@
 main {
-  height: 92vh;
-
-  
-
   .phone--background {
-
-    @include screen(laptop) {
+    @include screen(tablet) {
       display: none;
     }
   }
 
   .desktop--background {
     display: none;
-    
-    @include screen(laptop) {
+
+    @include screen(tablet) {
       display: block;
     }
   }
