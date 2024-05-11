@@ -11,12 +11,15 @@
 // COMPONENTS
 @import "./components/button";
 @import "./components/form";
+@import "./components/shapes";
+@import "./components/hamburger";
 
 // LAYOUT
 @import "./layout/header";
 @import "./layout/main";
 @import "./layout/footer";
 @import "./layout/thestory";
+@import "./layout/team";
 
 // PAGES
 @import "./pages/about";

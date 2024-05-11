@@ -1,0 +1,56 @@
+// THE STORY
+.custom-shape-divider-bottom-1715441345 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1715441345 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 117px;
+}
+
+.custom-shape-divider-bottom-1715441345 .shape-fill {
+  fill: $color-tertiary;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1715441345 svg {
+      width: calc(100% + 1.3px);
+      height: 56px;
+  }
+}
+
+// 2.
+.custom-shape-divider-bottom-1715451371 {
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background-color: $color-tertiary;
+}
+
+.custom-shape-divider-bottom-1715451371 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 117px;
+}
+
+.custom-shape-divider-bottom-1715451371 .shape-fill {
+  fill: $color-primary;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1715451371 svg {
+      width: calc(100% + 1.3px);
+      height: 80px;
+  }
+}
