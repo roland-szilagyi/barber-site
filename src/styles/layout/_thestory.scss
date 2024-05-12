@@ -2,9 +2,21 @@
   @include flex(flex, column, center, center);
   margin: 3rem 0;
 
+  @include screen(desktop) {
+    flex-direction: row;
+  }
+
   h2 {
     @include title(4rem, 0.06rem);
     margin-top: 3rem;
+
+    @include screen(desktop) {
+      @include title(4rem, 0.08rem);
+      margin-top: 10rem;
+      width: 40vw;
+      margin: 0 1rem;
+      text-align: center;
+    }
   }
 
   p {
@@ -12,5 +24,9 @@
     background-color: $color-tertiary;
     padding: 6rem 2rem 8rem 2rem;
     text-align: center;
+
+    @include screen(desktop) {
+      width: 60vw;
+    }
   }
 }

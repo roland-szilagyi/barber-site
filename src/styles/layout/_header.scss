@@ -2,6 +2,10 @@ header {
   @include flex(flex, row, space-between, center);
   height: 8vh;
   font-family: "font1";
+
+  @include screen(laptop) {
+    height: 12vh;
+  }
 }
 
 .title__cont {
@@ -13,6 +17,7 @@ header {
 
   @include screen(laptop) {
     font-size: $font-size-sm;
+    margin: 0 2rem;
   }
 }
 
@@ -27,10 +32,16 @@ header {
       margin: 0 1.5rem;
     }
   }
+
+  @include screen(desktop) {
+    a {
+      @include title(2.2rem, 0.05rem);
+      margin: 0 3rem;
+    }
+  }
 }
 
 .ham__cont {
-
   @include screen(laptop) {
     visibility: hidden;
   }

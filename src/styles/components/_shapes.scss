@@ -5,13 +5,17 @@
   width: 100%;
   overflow: hidden;
   line-height: 0;
+
+  @include screen(desktop) {
+    display: none;
+  }
 }
 
 .custom-shape-divider-bottom-1715441345 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 117px;
+  height: 200px;
 }
 
 .custom-shape-divider-bottom-1715441345 .shape-fill {
@@ -22,7 +26,7 @@
 @media (max-width: 767px) {
   .custom-shape-divider-bottom-1715441345 svg {
       width: calc(100% + 1.3px);
-      height: 56px;
+      height: 100px;
   }
 }
 
@@ -34,6 +38,10 @@
   overflow: hidden;
   line-height: 0;
   background-color: $color-tertiary;
+
+  @include screen(desktop) {
+    display: none;
+  }
 }
 
 .custom-shape-divider-bottom-1715451371 svg {
@@ -53,4 +61,25 @@
       width: calc(100% + 1.3px);
       height: 80px;
   }
+}
+
+// 3
+.custom-shape-divider-bottom-1715501772 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1715501772 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1715501772 .shape-fill {
+  fill: $color-tertiary;
 }

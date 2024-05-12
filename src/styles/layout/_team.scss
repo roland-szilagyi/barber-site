@@ -1,44 +1,52 @@
 .team {
-  @include flex(flex, column, center, center);
-  margin: 3rem 0;
   background-color: $color-primary;
+  text-align: center;
 
   h2 {
     @include title(4rem, 0.06rem);
+    margin-bottom: 5rem;
   }
 
   .team__cont {
-    margin-top: 13rem;
+    @include flex(flex, column, center, center);
+  }
 
-    .member__cont {
-      @include flex(flex, column, center, center);
-      height: 32rem;
-  
-      .profilepic {
-        width: 80vw;
-        box-shadow: 0px 0px 0px 3px $color-quinary;
-      }
-  
-      .profilesign {
-        position: relative;
-        bottom: 47vh;
-        opacity: .6;
-        width: 80%;
-      }
-  
-      p {
-        @include paragraph($font-size-xs, $color-tertiary);
-        text-align: center;
-        padding: 4rem 2rem;
-      }
-  
-      @include screen(laptop) {
-        flex-direction: row;
-  
-        img {
-          width: 50vw;
-        }
-      }
+  .member__cont {
+    @include flex(flex, column, center, center);
+    width: 80vw;
+
+    @include screen(laptop) {
+      width: 60vw;
+    }
+  }
+
+  .profilepic {
+    box-shadow: 0px 0px 0px 3px $color-quinary;
+  }
+
+  .profilesign {
+    position: relative;
+    bottom: 10rem;
+    margin-bottom: -15rem;
+    opacity: .6;
+
+    @include screen(tablet) {
+      bottom: 15rem;
+      margin-bottom: -23rem;
+    }
+
+    @include screen(laptop) {
+      max-width: 40vw;
+    }
+  }
+
+  p {
+    @include paragraph($font-size-xs, $color-tertiary);
+    text-align: center;
+    padding: 0 1rem 4rem 1rem;
+
+    @include screen(laptop) {
+      width: 50vw;
     }
   }
 }
