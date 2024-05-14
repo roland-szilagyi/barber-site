@@ -1,4 +1,5 @@
 main {
+  background-image: $background;
   .phone--background {
     @include screen(tablet) {
       display: none;

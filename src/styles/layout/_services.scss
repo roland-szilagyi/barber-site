@@ -1,11 +1,16 @@
 .services {
-  background-color: $color-tertiary;
+  background-image: $background;
   text-align: center;
 
   h2 {
     @include title(4rem, 0.06rem);
-    margin-bottom: 5rem;
-    color: $color-primary;
-    -webkit-text-stroke: 0.1rem $color-quinary; // 0.15rem optimal
+
+    @include screen(desktop) {
+      @include title(4rem, 0.08rem);
+      margin-top: 10rem;
+      width: 40vw;
+      margin: 0 1rem;
+      text-align: center;
+    }
   }
 }

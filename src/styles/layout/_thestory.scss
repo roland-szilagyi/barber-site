@@ -1,10 +1,6 @@
 .thestory {
   @include flex(flex, column, center, center);
-  margin: 3rem 0;
-
-  @include screen(desktop) {
-    flex-direction: row;
-  }
+  background-image: $background;
 
   h2 {
     @include title(4rem, 0.06rem);

@@ -2,7 +2,7 @@ header {
   @include flex(flex, row, space-between, center);
   height: 8vh;
   font-family: "font1";
-
+  background-image: $background;
   @include screen(laptop) {
     height: 12vh;
   }
