@@ -183,7 +183,7 @@ header {
   align-items: center;
   height: 8vh;
   font-family: "font1";
-  background-image: url("/src/assets/imgs/background.png");
+  background-image: url("./../assets/imgs/background.png");
 }
 @media screen and (min-width: 769px) {
   header {
@@ -247,7 +247,7 @@ header {
 }
 
 main {
-  background-image: url("/src/assets/imgs/background.png");
+  background-image: url("./../assets/imgs/background.png");
 }
 @media screen and (min-width: 576px) {
   main .phone--background {
@@ -268,7 +268,7 @@ main .desktop--background {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("/src/assets/imgs/background.png");
+  background-image: url("./../assets/imgs/background.png");
 }
 .thestory h2 {
   font-family: "font1";
@@ -304,7 +304,7 @@ main .desktop--background {
 }
 
 .team {
-  background-image: url("/src/assets/imgs/background.png");
+  background-image: url("./../assets/imgs/background.png");
   text-align: center;
 }
 .team h2 {
@@ -366,7 +366,7 @@ main .desktop--background {
 }
 
 .services {
-  background-image: url("/src/assets/imgs/background.png");
+  background-image: url("./../assets/imgs/background.png");
   text-align: center;
 }
 .services h2 {
